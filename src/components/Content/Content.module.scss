@@ -73,6 +73,9 @@
       font-size: 100px;
       line-height: 100%;
     }
+    .items{
+      justify-content: space-between;
+    }
     .picture{
       .spiker{
         width: 470px;
@@ -122,8 +125,12 @@
 }
 @media(max-width:768px){
   .content{
+    margin-top: 30px;
     .title{
       font-size: 65px;
+    }
+    .items{
+      margin-top: 30px;
     }
     .describe{
       font-size: 21px;
@@ -159,12 +166,12 @@
     }
     .picture{
       .spiker{
-        width: 160px;
+        width: 170px;
       }
       .play{
         width: 25px;
-        top: 40px;
-        right: 70px;
+        top: 45px;
+        right: 75px;
       }
     }
     button{
