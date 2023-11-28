@@ -1,0 +1,52 @@
+.price {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: #340078;
+    text-align: center;
+    font-family: "Extended-Ultrabold";
+    font-size: 40px;
+    line-height: 110%; /* 49.5px */
+  }
+  .text {
+    color: #340078;
+    text-align: center;
+    font-family: "Extended-Semibold";
+    font-size: 35px;
+    line-height: 110%;
+    margin-top: 66px;
+  }
+  .list {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+
+    .link {
+      color: #340078;
+      font-family: 'Extended-Semibold';
+      font-size: 25px;
+      line-height: 110%;
+
+      span{
+        color: #f50;
+      }
+    }
+    .link::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #340078;
+      border-radius: 50%;
+      text-align: start;
+      margin-right: 11px;
+    }
+    .link:nth-of-type(4), .link:nth-of-type(3){
+      margin-top: 45px;
+    }
+  }
+}

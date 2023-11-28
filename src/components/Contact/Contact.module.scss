@@ -1,0 +1,30 @@
+.contact {
+  border-radius: 80px 80px 0px 0px;
+  background: #340078;
+  margin-top: 110px;
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      color: #340078;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 0px 35.2322px 0px rgba(255, 255, 255, 0.5);
+      border: none;
+      font-family: "Extended-Ultrabold";
+      font-size: 22.02px;
+      line-height: 110%; /* 24.222px */
+      margin: 97px 0;
+      cursor: pointer;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
