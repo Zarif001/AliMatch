@@ -10,8 +10,8 @@ function Main () {
         <div className={styles.main}>
             <Container>
             <About/>
-            <Advantages/>
-            <Price/>
+            {/* <Advantages/> */}
+            {/* <Price/> */}
             </Container>
         </div>
     )
