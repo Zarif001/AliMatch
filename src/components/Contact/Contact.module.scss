@@ -24,6 +24,67 @@
 
       img {
         margin-right: 20px;
+        width: 55px;
+      }
+    }
+  }
+}
+@media(max-width:992px){
+  .contact{
+    .box{
+      button{
+        padding: 30px;
+        font-size: 20px;
+
+        img{
+          width: 40px;
+
+        }
+      }
+    }
+  }
+}
+@media(max-width:767px){
+  .contact{
+    .box{
+      button{
+        padding: 25px;
+        font-size: 18px;
+
+        img{
+          width: 35px;
+
+        }
+      }
+    }
+  }
+}
+@media(max-width:568px){
+  .contact{
+    .box{
+      button{
+        padding: 20px;
+        font-size: 13px;
+
+        img{
+          width: 30px;
+
+        }
+      }
+    }
+  }
+}
+@media(max-width:410px){
+  .contact{
+    .box{
+      button{
+        padding: 15px;
+        font-size: 11px;
+
+        img{
+          width: 25px;
+
+        }
       }
     }
   }
