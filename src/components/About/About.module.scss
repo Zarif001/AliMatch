@@ -66,6 +66,7 @@
 }
 @media(max-width:992px){
   .about{
+    padding-top: 0px;
     .title{
       font-size: 35px;
     }
@@ -120,12 +121,46 @@
 }
 @media(max-width:567px){
   .about{
+    margin-top: 50px;
     padding-top: 0;
     .title{
-      font-size: 18px;
+      font-size: 20px;
     }
     .describe{
-      font-size: 10px;
+      font-size: 11px;
+      margin-bottom: 60px;
+    }
+    .aboutBg {
+      max-width: 370px;
+      width: 100%;
+      margin: 0 auto;
+
+      h3{
+        font-size: 18px;
+      }
+
+      .boxex{
+        margin: 32px 32px 0 32px;
+        padding-bottom: 50px;
+        .box{
+          .text{
+            font-size: 9px;
+            padding: 20px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:410px){
+  .about{
+    margin-top: 50px;
+    padding-top: 0;
+    .title{
+      font-size: 16px;
+    }
+    .describe{
+      font-size: 9px;
       margin-bottom: 60px;
     }
     .aboutBg {
@@ -142,7 +177,7 @@
         padding-bottom: 50px;
         .box{
           .text{
-            font-size: 8px;
+            font-size: 7px;
             padding: 20px 5px;
           }
         }

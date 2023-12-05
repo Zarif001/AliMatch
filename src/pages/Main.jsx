@@ -11,7 +11,7 @@ function Main () {
             <Container>
             <About/>
             <Advantages/>
-            {/* <Price/> */}
+            <Price/>
             </Container>
         </div>
     )

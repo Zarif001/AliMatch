@@ -1,5 +1,5 @@
 .info {
-  margin-top: 59px;
+  margin-top: 60px;
   .title {
     color: #340078;
     text-align: center;
@@ -22,13 +22,15 @@
       box-shadow: 0px 0px 45px 0px rgba(52, 0, 120, 0.25);
       margin-bottom: -20px;
       z-index: 99;
+      max-width: 620px;
+      width: 100%;
       h4 {
         color: #340078;
         text-align: center;
         font-family: "Extended-Bold";
         font-size: 28px;
+        padding: 21px 0 25px 0;
         line-height: 110%; /* 30.8px */
-        padding: 23px 36px;
       }
     }
     .describeBox {
@@ -43,11 +45,125 @@
         font-family: "Extended-Regular";
         font-size: 25px;
         line-height: 110%; /* 27.5px */
-        padding: 54px 0;
+        padding: 54px 30px;
       }
     }
   }
   .items:nth-of-type(2){
     margin: 30px 0;
+  }
+}
+@media(max-width:992px){
+  .info{
+    .title{
+      font-size: 35px;
+    }
+    .items{
+      .titleBox{
+        max-width: 540px;
+        width: 100%;
+
+        h4{
+          font-size: 22px;
+          padding: 18px 0 23px 0;
+        }
+      }
+      .describeBox{
+        max-width: 720px;
+        width: 100%;
+
+        p{
+          font-size: 20px;
+          padding: 54px 20px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:767px){
+  .info{
+    .title{
+      font-size: 30px;
+    }
+    .items{
+      .titleBox{
+        max-width: 440px;
+        width: 100%;
+
+        h4{
+          font-size: 19px;
+          padding: 15px 0 20px 0;
+        }
+      }
+      .describeBox{
+        max-width: 520px;
+        width: 100%;
+
+        p{
+          font-size: 15px;
+          padding: 54px 20px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:568px){
+  .info{
+    margin-top: 35px;
+    .title{
+      font-size: 25px;
+    }
+    .box{
+      margin-top: 66px;
+    }
+    .items{
+      .titleBox{
+        max-width: 280px;
+        width: 100%;
+
+        h4{
+          font-size: 12px;
+          padding: 11px 0 13px 0;
+        }
+      }
+      .describeBox{
+        max-width: 380px;
+        width: 100%;
+        p{
+          font-size: 12px;
+          padding: 40px 30px;
+        }
+      }
+    }
+  }
+}
+@media(max-width:410px){
+  .info{
+    margin-top: 35px;
+    .title{
+      font-size: 20px;
+    }
+    .box{
+      margin-top: 66px;
+    }
+    .items{
+      .titleBox{
+        max-width: 260px;
+        width: 100%;
+
+        h4{
+         font-size: 11px;
+         padding: 10px 0 12px 0;
+        }
+      }
+      .describeBox{
+        max-width: 350px;
+        width: 100%;
+        p{
+          font-size: 10px;
+          padding: 40px 30px;
+        }
+      }
+    }
   }
 }

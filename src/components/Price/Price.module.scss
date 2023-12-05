@@ -50,3 +50,90 @@
     }
   }
 }
+@media(max-width:992px){
+  .price{
+    .title{
+      font-size: 35px;
+    }
+    .text{
+      font-size: 30px;
+      margin-top: 40px;
+    }
+    .list{
+      column-gap: 30px;
+      .link{
+        font-size: 22px;
+      }
+      .link::before{
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  .price{
+    .title{
+      font-size: 30px;
+    }
+    .text{
+      font-size: 25px;
+    }
+    .list{
+      column-gap: 30px;
+      .link{
+        font-size: 17px;
+      }
+      .link::before{
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+}
+@media(max-width:568px){
+  .price{
+    .title{
+      font-size: 22px;
+    }
+    .text{
+      font-size: 18px;
+    }
+    .list{
+
+      .link{
+        font-size: 13px;
+      }
+      .link::before{
+        width: 7px;
+        height: 7px;
+      }
+      .link:nth-of-type(4), .link:nth-of-type(3){
+        margin-top: 25px;
+      }
+    }
+  }
+}
+@media(max-width:410px){
+  .price{
+    .title{
+      font-size: 18px;
+    }
+    .text{
+      font-size: 15px;
+    }
+    .list{
+
+      .link{
+        font-size: 11px;
+      }
+      .link::before{
+        width: 7px;
+        height: 7px;
+      }
+      .link:nth-of-type(4), .link:nth-of-type(3){
+        margin-top: 25px;
+      }
+    }
+  }
+}

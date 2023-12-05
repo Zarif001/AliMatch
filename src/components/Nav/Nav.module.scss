@@ -77,6 +77,28 @@
         padding-top: 30px;
         .navBox{
             .img{
+                width: 62px;
+            }
+            .img:last-child{
+                width: 100px;
+            }
+        }
+        .links{
+            li{
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+        .line{
+            height: 30px;
+        }
+    }
+}
+@media(max-width:410px){
+    .nav{
+        padding-top: 30px;
+        .navBox{
+            .img{
                 width: 42px;
             }
             .img:last-child{

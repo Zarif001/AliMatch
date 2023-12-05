@@ -9,7 +9,7 @@ function Footer () {
         <div className={styles.footer}>
             <Container>
                 <Info/>
-                <Contact/>
+                {/* <Contact/> */}
             </Container>
         </div>
     )
