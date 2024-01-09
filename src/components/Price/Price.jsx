@@ -1,17 +1,44 @@
 import React from "react";
 import styles from "./Price.module.scss";
+import { useTranslation } from "react-i18next";
 
 function Price() {
+  const {t, i18n} = useTranslation('content')
+  const priceText2Ru = t('priceText2')
+  const priceText2Uz = t('priceText2')
+  const priceText3Uz = t('priceText3')
+  const priceText3Ru = t('priceText3')
   return (
     <div className={styles.price}>
-      <h2 className={styles.title}>Стоимость Ali match 999 USD</h2>
-      <h5 className={styles.text}>В эту стоимость включено:</h5>
+      <h2 className={styles.title}>{t('priceTitle')}</h2>
+      <h5 className={styles.text}>{t('priceText')}</h5>
 
       <ul className={styles.list}>
-        <li className={styles.link}>Одно интервью с <br />экспертом <span> Alibaba.com</span></li>
-        <li className={styles.link}>Подбор поставщиков <br />специалистами <br /><span>Alibaba.com</span>  в <span>Китае</span></li>
-        <li className={styles.link}>Подготовка технического <br />задания для подбора <br />поставщиков</li>
-        <li className={styles.link}>Организация онлайн встреч</li>
+        <li className={styles.link}>{i18n.language === 'uz' ? (
+          <>
+          <span>Alibaba.com</span>
+          {priceText2Uz}
+          </>
+        ): 
+        <>
+        {priceText2Ru}
+        <span>Alibaba.com</span>
+        </>
+      }</li>
+        <li className={styles.link}>
+          {i18n.language === 'uz' ? (
+            <>
+            <span>Alibaba.com</span>
+            {priceText3Uz}
+            </>
+          ):
+          <>
+          {priceText3Ru} <span>Alibaba.com</span> в Китае
+          </>
+          }
+        </li>
+        <li className={styles.link}>{t('priceText4')}</li>
+        <li className={styles.link}>{t('priceText5')}</li>
       </ul>
     </div>
   );

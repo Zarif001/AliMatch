@@ -1,118 +1,125 @@
-.nav{
+.nav {
+  position: fixed;
+  background: #f4f9ff;
+  width: 100%;
+  border-bottom: 1px solid white;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-bottom: 15px;
+
+  .navCaption {
     display: flex;
-    padding-top: 50px;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .navBox {
+    display: flex;
+    align-items: center;
+    .img {
+      width: 140px;
+    }
+    .img:last-child {
+      width: 180px;
+    }
+  }
+  .line {
+    height: 32px;
+    border-left: 1px solid #000;
+    margin: 0 9px;
+  }
+  .links {
+    li {
+      font-family: "Extended-Regular";
+      font-size: 9px;
+      color: #000;
+      margin-bottom: 3px;
+    }
+  }
+  .button {
+    border-radius: 10px;
+    border: 2px solid #f60;
+    font-family: "Extended-SemiBold";
+    color: #f60;
+    width: 200px;
+    padding: 20px 0;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .button:nth-of-type(1) {
+    margin-right: 20px;
+  }
+  .button:nth-of-type(2) {
+    border: 2px solid #340078;
+    color: #340078;
+  }
+  .button:nth-of-type(2):hover {
+    background: #340078;
+  }
+  .button:hover {
+    color: #fff;
+    background: #f60;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
 
-    .navBox{
-        display: flex;
-        align-items: center;
+    .icons {
+      width: 45px;
+      display: block;
+      margin-right: 5px;
+    }
 
-        .img{
-            width: 142px;
-        }
-        .img:last-child{
-            width: 180px;
-        }
-        
+    .customSelect {
+      position: relative;
+      display: inline-block;
     }
-    .line {
-        height: 53px;
-        border-left: 1px solid #000;
-        margin: 0 9px;
-      }
-      .links {
-        li{
-            color: #000;
-            font-family: 'Extended-Regular';
-            font-size: 15px;
-            line-height: 24px;
-        }
-      }
-}
 
-@media(max-width:992px){
-    .nav{
-        .navBox{
-            .img{
-                width: 102px;
-            }
-            .img:last-child{
-                width: 140px;
-            }
-        }
-        .links{
-            li{
-                font-size: 13px;
-                line-height: 20px;
-            }
-        }
-        .line{
-            height: 45px;
-        }
+    .selectButton {
+      appearance: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
     }
-}
-@media(max-width:768px){
-    .nav{
-        .navBox{
-            .img{
-                width: 82px;
-            }
-            .img:last-child{
-                width: 120px;
-            }
-        }
-        .links{
-            li{
-                font-size: 11px;
-                line-height: 18px;
-            }
-        }
-        .line{
-            height: 40px;
-        }
+
+    .selectButton img {
+      width: 30px;
+      height: auto;
     }
-}
-@media(max-width:567px){
-    .nav{
-        padding-top: 30px;
-        .navBox{
-            .img{
-                width: 62px;
-            }
-            .img:last-child{
-                width: 100px;
-            }
-        }
-        .links{
-            li{
-                font-size: 10px;
-                line-height: 14px;
-            }
-        }
-        .line{
-            height: 30px;
-        }
+
+    .selectOptions {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      padding: 5px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
     }
-}
-@media(max-width:410px){
-    .nav{
-        padding-top: 30px;
-        .navBox{
-            .img{
-                width: 42px;
-            }
-            .img:last-child{
-                width: 80px;
-            }
-        }
-        .links{
-            li{
-                font-size: 8px;
-                line-height: 12px;
-            }
-        }
-        .line{
-            height: 25px;
-        }
+
+    .customSelect:hover .selectOptions {
+      display: flex;
     }
+
+    .selectOptions img {
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+
+    .selectedLanguage img {
+      border: 2px solid #333;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
 }

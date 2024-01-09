@@ -2,7 +2,9 @@ import React from 'react'
 import styles from './Contact.module.scss'
 import { useState } from 'react'
 import Submit from '../Submit/Submit'
+import { useTranslation } from 'react-i18next'
 function Contact() {
+  const {t} = useTranslation('content')
     const [modal, setModal] = useState(false)
 
     const openModal = () =>{
@@ -18,7 +20,7 @@ function Contact() {
             
             <button onClick={openModal}>
             <img src="./images/callButton.svg" alt="callButton" />
-                Заказать обратный звонок эксперта</button>
+               {t('supLast')} </button>
             </div>
             </>
             {

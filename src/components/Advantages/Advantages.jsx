@@ -1,23 +1,25 @@
 import React from "react";
 import styles from "./Advantages.module.scss";
+import { useTranslation } from "react-i18next";
 
 function Advantages() {
+  const {t} = useTranslation('content')
   return (
     <div className={styles.advantages}>
-      <h2 className={styles.title}>Преимущества Ali match</h2>
+      <h2 className={styles.title}>{t('advantageTitle')}</h2>
       <div className={styles.box}>
         <div className={styles.items}>
           <div className={styles.item}>
             <p>.</p>
           </div>
           <div className={styles.item}>
-            <p>База активных поставщиков</p>
+            <p>{t('advantageText')}</p>
           </div>
           <div className={styles.item}>
-            <p>Стоимость услуги</p>
+            <p>{t('advantageText2')}</p>
           </div>
           <div className={styles.item}>
-            <p>Ресурсы</p>
+            <p>{t('advantageText3')}</p>
           </div>
         </div>
         <div className={styles.items}>
@@ -25,27 +27,27 @@ function Advantages() {
             <p className={styles.span}>Alibaba.com</p>
           </div>
           <div className={styles.item}>
-            <p>Более 280 000</p>
+            <p>{t('advantageText4')}</p>
           </div>
           <div className={styles.item}>
             <p>999 USD</p>
           </div>
           <div className={styles.item}>
-            <p>Офисы по всему Китаю</p>
+            <p>{t('advantageText5')}</p>
           </div>
         </div>
         <div className={styles.items}>
           <div className={styles.item}>
-            <p className={styles.span}>Агент по закупкам</p>
+            <p className={styles.span}>{t('advantageTex6')}</p>
           </div>
           <div className={styles.item}>
             <p>20-50</p>
           </div>
           <div className={styles.item}>
-            <p>Комиссия от цены закупки</p>
+            <p>{t('advantageText7')}</p>
           </div>
           <div className={styles.item}>
-            <p>Команда 1-5 человек</p>
+            <p>{t('advantageText8')}</p>
           </div>
         </div>
       </div>

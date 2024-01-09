@@ -1,27 +1,47 @@
 import React from "react";
-import styles from './Content.module.scss'
+import styles from "./Content.module.scss";
+import { useTranslation } from "react-i18next";
 
 function Content() {
+  const { t, i18n } = useTranslation("content");
+  const capTitleUz = t("contTitle");
+  const capTitleRu = t("contTitle");
   return (
     <div className={styles.content}>
       <h1 className={styles.title}>Ali Match</h1>
       <div className={styles.items}>
         <p className={styles.describe}>
-          Доверьте поиск <br /> и подбор надежных <br /> поставщиков из Китая <br /> команде
-          <span> Alibaba.com </span>
+          {i18n.language === "uz" ? (
+            <>
+              <span> Alibaba.com </span>
+              {capTitleUz}
+            </>
+          ) : (
+            <>
+              {capTitleRu}
+              <span> Alibaba.com </span>
+            </>
+          )}
         </p>
         <div>
-        <div className={styles.picture}>
-          <div>
-            <img className={styles.spiker} src="./images/spiker.webp" alt="spiker" />
+          <div className={styles.picture}>
+            <div>
+              <img
+                className={styles.spiker}
+                src="./images/spiker.webp"
+                alt="spiker"
+              />
+            </div>
+            <div>
+              <img
+                className={styles.play}
+                src="./images/tick.webp"
+                alt="tick"
+              />
+            </div>
           </div>
-          <div>
-            <img className={styles.play} src="./images/tick.webp" alt="tick" />
-          </div>
+          <button>{t('contButton')}</button>
         </div>
-        <button>Узнать больше о Ali Match</button>
-        </div>
-        
       </div>
     </div>
   );
